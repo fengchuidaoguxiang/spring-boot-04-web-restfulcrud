@@ -25,6 +25,7 @@ public class MyServerConfig {
 
     @Bean
     public FilterRegistrationBean myFilter(){
+
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new MyFilter());
         filterRegistrationBean.setUrlPatterns(Arrays.asList("/hello","/myServlet"));
